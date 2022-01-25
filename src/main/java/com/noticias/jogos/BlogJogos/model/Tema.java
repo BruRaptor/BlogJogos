@@ -12,6 +12,14 @@ import javax.validation.constraints.Size;
 @Table (name = "tb_temas")
 public class Tema {
 
+	@Id
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	private long id;
+	
+	@NotNull
+	@Size (max = 1000)
+	private String descricao;
+	
 	public long getId() {
 		return id;
 	}
@@ -27,12 +35,4 @@ public class Tema {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-
-	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private long id;
-	
-	@NotNull
-	@Size (max = 1000)
-	private String descricao;
 }
