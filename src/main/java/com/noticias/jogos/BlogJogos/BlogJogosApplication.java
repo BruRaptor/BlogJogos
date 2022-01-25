@@ -9,7 +9,7 @@ public class BlogJogosApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BlogJogosApplication.class, args);
 		
-		System.out.println ("\n Vamo pra cima!");
+		System.out.println ("\n Server Online!");
 	}
 	
 }
